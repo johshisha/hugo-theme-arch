@@ -1,6 +1,6 @@
-baseurl = "https://syui.github.io/hugo-theme-arch/"
-languageCode = "en-us"
-title = "hugo-theme-arch"
+baseurl = "https://johshisha.github.io/"
+languageCode = "jp"
+title = "johshisha's blog"
 # Enable comments by entering your Disqus shortname
 disqusShortname = ""
 # Enable Google Analytics by entering your tracking code
@@ -16,7 +16,7 @@ theme = "hugo-theme-arch"
 [params]
     # Tell me who you're
     location = ""
-    site_description = ""
+    site_description = "johshisha's blog"
     copyright  = "Powered by [Hugo](//gohugo.io). Theme by [hugo-theme-arch](https://github.com/syui/hugo-theme-arch)."
 
     # Format dates with Go's time formating
@@ -52,7 +52,7 @@ theme = "hugo-theme-arch"
 # Add your social network accounts to the profile section on the left
 # by entering your username. The links to your account will be
 # create automatically.
-    github          = ""
+    github          = "johshisha"
     bitbucket       = ""
     jsfiddle        = ""
     codepen         = ""
@@ -78,7 +78,7 @@ theme = "hugo-theme-arch"
     facebook        = ""
     facebook_admin  = ""
     twitter_domain  = ""
-    twitter         = ""
+    twitter         = "johshisha"
 
 # Enable and disable widgets for the right sidebar
 [params.widgets]
