@@ -1,5 +1,5 @@
 baseurl = "https://johshisha.github.io/"
-languageCode = "jp"
+languageCode = "ja"
 title = "johshisha's blog"
 # Enable comments by entering your Disqus shortname
 disqusShortname = ""
@@ -86,4 +86,3 @@ theme = "hugo-theme-arch"
     categories = true
     tags = true
     tag_cloud = true
-
