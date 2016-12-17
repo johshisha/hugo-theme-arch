@@ -250,7 +250,7 @@ a:visited {
 }
 .article-entry hr,
 .widget hr {
-	border: 1px dashed #eceff2;
+	border: 1px solid #460e44;
 }
 .article-entry strong,
 .widget strong {
@@ -2047,9 +2047,9 @@ div#article-category .fa.fa-terminal {
     font-weight: bold;
 }
 
-img {
+/*img {
     width: 100%;
-}
+}*/
 
 div.talaria-wrapper a > img {
     width: 48px !important;
