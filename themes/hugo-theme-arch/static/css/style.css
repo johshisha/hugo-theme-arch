@@ -1943,7 +1943,7 @@ h1.article-title {
 }
 
 .header-inner {
-	border-bottom: solid 5px #428bca;
+	border-bottom: solid 8px #428bca;
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
@@ -2070,5 +2070,5 @@ div.talaria-wrapper div.talaria-comment-body {
 }
 
 #header a, #header a:hover {
-    color: #999 !important;
+    color: #f8f4e6 !important;
 }
