@@ -1967,8 +1967,7 @@ pre {
 .article-inner-first {
 	margin:30px 10px 10px 10px;
 	padding:10px;
-	background: #ECF2F5 none repeat scroll 0% 0%;
-	border: 1px solid #BCD;
+	background: #F6F9FC none repeat scroll 0% 0%;
 }
 .article-inner-first h2 {
 	padding-top:0px;
@@ -1976,7 +1975,6 @@ pre {
 	font-size:20px;
 	font-weight: bold;
 	padding-bottom:10px;
-	border-bottom: 1px solid #ccc;
 }
 .rss-right{
 	margin:30px 10px 10px 10px;
