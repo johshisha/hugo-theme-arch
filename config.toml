@@ -2,7 +2,7 @@ baseurl = "https://johshisha.github.io/blog/"
 languageCode = "ja"
 title = "johshisha's blog"
 # Enable comments by entering your Disqus shortname
-disqusShortname = ""
+disqusShortname = "https-johshisha-github-io-blog"
 # Enable Google Analytics by entering your tracking code
 googleAnalytics = ""
 # Define the number of posts per site
