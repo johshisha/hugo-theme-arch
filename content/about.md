@@ -14,7 +14,7 @@ categories = [
 
 +++
 
-## Satoshi Sanjo
+## @johshisha
 {{< figure src="/banners/profile.jpg" width="220" height="196">}}
 
 関西在住 修士1年  
