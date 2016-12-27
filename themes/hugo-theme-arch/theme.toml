@@ -8,11 +8,11 @@ features = ["syntax highlighting", "maxthjax", "rss", "gallery", "widgets", "goo
 min_version = 0.15
 
 [author]
-  name = "syui"
-  homepage = "//syui.github.com/"
+  name = "johshisha"
+  homepage = "//johshisha.github.io/blog"
 
 # If reference an existing theme
 [original]
-  name = "Digitalcraftsman"
-  homepage = "//github.com/digitalcraftsman"
-  repo = "//github.com/digitalcraftsman/hugo-icarus-theme"
+  name = "syui"
+  homepage = "//syui.github.com/"
+  repo = "//github.com/syui/hugo-theme-arch"
