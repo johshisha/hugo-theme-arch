@@ -19,3 +19,6 @@ categories = [
 
 関西在住 修士1年  
 機械学習系の研究をしている
+
+
+<!-- [研究ページ](https://johshisha.github.io/) -->
