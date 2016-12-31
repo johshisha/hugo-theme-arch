@@ -17,7 +17,8 @@ images = [
 
 +++
 
-ラズパイにSiriみたいなことをさせようと思ったが，マイクとスピーカの購入がまだなのでとりあえず手元にあるMacで似たような処理を再現する．
+ラズパイにSiriみたいなことをさせたい．  
+が，マイクとスピーカの購入がまだなのでとりあえず手元にあるMacで似たような処理を再現する．
 
 ## 仕様
 今回作るもののイメージはこんな感じ  
@@ -31,18 +32,19 @@ Raspi「今日の天気は晴れです」
 
 ## 実装
 音声認識 => [Julius](http://julius.osdn.jp/)  
-天気情報取得 => Ruby
+天気情報取得 =>  [OpenWeatherMap](http://openweathermap.org/)(Ruby)
 
-JuliusはOSSの音声認識エンジンで，認識精度自体はDocomo等の音声認識APIには劣るが，ローカルで動き，単語の登録等ができるのが強み．
+JuliusはOSSの音声認識エンジンで，認識精度自体はDocomo等の音声認識APIには劣るが，ローカルで動き，単語の登録等ができるのが強み．  
 常時認識しておきたいのでWebAPIを用いるよりこちらのほうがよいと判断した．
 
 ## 手順
 ### Juliusのインストール
 ディクテーションキット  
-- Mac  
+- Mac
 http://sourceforge.jp/projects/julius/downloads/60416/dictation-kit-v4.3.1-osx.tgz
-- Linux  
-https://ja.osdn.net/projects/julius/downloads/60416/dictation-kit-v4.3.1-linux.tgz
+- Linux
+https://ja.osdn.net/projects/julius/downloads/60416/dictation-kit-v4.3.1-linux.tgz  
+
 をダウンロードしてくる
 
 ```
@@ -61,7 +63,7 @@ sentence1:  こんにちは 。
 <<< please speak >>>
 ```
 うまくうごいてそう
-このdictation-kitの中には必要ないものも多いので，必要なものだけを取り出してくる．
+このdictation-kitの中には必要ないものも多いので，必要なものだけを取り出してくる．  
 今回は`model`,`am-gmm.jconf`,`bin/julius`,`yomi2voca.pl`を取り出してきて適当に新しいフォルダを作る．
 ```
 $ mkdir julius
@@ -117,7 +119,7 @@ phseq1: silB h e i r a z u p a i silE
 cmscore1: 1.000
 score1: -2283.777832
 ```
-こんな感じに今まで登録されていな方単語が認識されるようになった．
+こんな感じに今まで登録されていな方単語が認識されるようになった．  
 ※注意すべきなのが，登録した単語ありきの認識をするため，なにかしらの言葉を発すると登録した単語のどれかに割り当ててしまうということ．
 
 ### Rubyとのつなぎ込み
@@ -182,5 +184,14 @@ hey_raspi.run(julius)
 ### 天気の取得
 は次回〜
 
+
+## まとめ
 とりあえず，今回は音声認識BOTの外枠だけ作成した．  
-これの中身を変えるとそれぞれの好きなBOTが作れるのではないでしょうか〜
+これの中身を変えるとそれぞれの好きなBOTが作れるのではないでしょうか〜  
+次回はOpenWeatherMapを使って音声で天気を取ってきます．  
+
+
+#### ref
+- [[Raspberry Pi]USBマイクと音声認識ソフトJuliusを使って音声認識を試す(2)](http://blog.livedoor.jp/sce_info3-craft/archives/9242956.html)
+- [Raspberry Piで音声認識する人工知能をつくってみる](https://iotnews.jp/archives/8094)
+- [Raspberry Piで音声認識](http://qiita.com/t_oginogin/items/f0ba9d2eb622c05558f4)
