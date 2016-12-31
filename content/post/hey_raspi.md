@@ -6,7 +6,7 @@ tags = [
 categories = [
 "RaspberryPi"
 ]
-draft = true
+draft = false
 slug = "hey_raspi_part1"
 date = "2016-12-31T18:52:59+09:00"
 title = "ラズパイでSiriのような音声認識BOTを作ってみた part1"
