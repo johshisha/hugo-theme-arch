@@ -1,3 +1,4 @@
+hasCJKLanguage = true
 baseurl = "https://johshisha.github.io/blog/"
 languageCode = "ja"
 title = "johshisha's blog"
