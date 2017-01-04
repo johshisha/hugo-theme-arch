@@ -7,6 +7,7 @@ tags = [
 categories = [
   "hugo"
 ]
+draft = true
 menu = ""
 banner = ""
 
